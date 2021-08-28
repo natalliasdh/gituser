@@ -236,7 +236,5 @@ h2 {
 
 #noresults {
     color: red;
-    position: absolute;
-    top: 17px;
-    right: 120px;
+    padding-left: 15px;
 }
