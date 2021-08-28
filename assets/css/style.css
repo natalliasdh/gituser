@@ -63,6 +63,7 @@ h1 {
     box-sizing: border-box;
     border: none;
     outline: none;
+    padding-left: 45px;
 }
 
 .dark-theme #searchfield {
@@ -70,7 +71,6 @@ h1 {
 }
 
 #searchfield::placeholder {
-    padding-left: 45px;
     color: #4B6A9B;
     font-size: 13px;
     line-height: 25px;
@@ -96,6 +96,7 @@ h1 {
     position: absolute;
     right: 10px;
     top: 4px;
+    cursor: pointer;
 }
 
 .search {
@@ -152,6 +153,7 @@ h2 {
     flex-direction: row;
     margin-bottom: 24px;
     border-radius: 10px;
+    background-color: #F6F8FF;
 }
 
 .dark-theme .stats {
@@ -176,7 +178,6 @@ h2 {
 .socialitem {
     display: flex;
     flex-direction: row;
-    ackground-color: khaki;
     align-items: center;
 }
 
@@ -189,4 +190,36 @@ h2 {
     flex-basis: 80%;
     padding-left: 20px;
     margin-bottom: 15px;
+}
+
+@media only screen and (min-width:800px) {
+    .content {
+        width: 730px;
+    }
+    #searchfield::placeholder {
+        padding-left: 0;
+        font-size: 18px;
+    }
+    #searchfield {
+        padding-left: 80px;
+        font-size: 18px;
+    }
+    #go {
+        top: 7px;
+    }
+    .social {
+        flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .socialitem {
+        flex-basis: 50%;
+    }
+    .namejoined {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
