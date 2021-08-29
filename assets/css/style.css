@@ -195,6 +195,7 @@ h2 {
 .socialitem div {
     flex-basis: 80%;
     padding-left: 20px;
+    word-break: break-all;
     /*margin-bottom: 15px;*/
 }
 
@@ -221,6 +222,14 @@ h2 {
     }
     .bio {
         font-size: 15px;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .socialitem {
+        flex-basis: 50%;
     }
 }
 

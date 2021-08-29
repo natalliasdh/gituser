@@ -45,24 +45,36 @@ function updateInfo(response) {
     document.querySelector("#followers").innerHTML = response.followers;
     document.querySelector("#following").innerHTML = response.following;
 
-    if (response.location !== null) { document.querySelector("#location").innerHTML = response.location; } else {
+    if (response.location !== null) {
+        document.querySelector("#location").innerHTML = response.location;
+        document.querySelector("#location").style.opacity = 1;
+    } else {
         document.querySelector("#location").innerHTML = 'Not available';
         document.querySelector("#location").style.opacity = 0.5;
     }
 
     if (response.twitter_username !== null)
 
-    { document.querySelector("#twitter").innerHTML = response.twitter_username; } else {
+    {
+        document.querySelector("#twitter").innerHTML = response.twitter_username;
+        document.querySelector("#twitter").style.opacity = 1;
+    } else {
         document.querySelector("#twitter").innerHTML = "Not available";
         document.querySelector("#twitter").style.opacity = 0.5;
     }
 
-    if (response.blog !== "") { document.querySelector("#website").innerHTML = response.blog; } else {
+    if (response.blog !== "") {
+        document.querySelector("#website").innerHTML = response.blog;
+        document.querySelector("#website").style.opacity = 1;
+    } else {
         document.querySelector("#website").innerHTML = "Not available";
         document.querySelector("#website").style.opacity = 0.5;
     }
 
-    if (response.company !== null) { document.querySelector("#company").innerHTML = response.company; } else {
+    if (response.company !== null) {
+        document.querySelector("#company").innerHTML = response.company;
+        document.querySelector("#company").style.opacity = 1;
+    } else {
         document.querySelector("#company").innerHTML = "Not available";
         document.querySelector("#company").style.opacity = 0.5;
     }
